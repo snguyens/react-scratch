@@ -1,6 +1,4 @@
-// src/index.js
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 
 const App = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -20,4 +18,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
