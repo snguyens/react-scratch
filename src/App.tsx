@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { FunctionComponent, useState } from "react";
 
-const App = () => {
+const App: FunctionComponent = () => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
-    <div>
-      Hello{" "}
+    <>
       <button
         onClick={() => setIsToggled(!isToggled)}
         style={{
@@ -14,7 +13,7 @@ const App = () => {
           backgroundColor: isToggled ? "red" : "green",
         }}
       ></button>
-    </div>
+    </>
   );
 };
 
